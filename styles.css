@@ -1,0 +1,105 @@
+/* =========================== */
+/* LAYOUT STYLES */
+/* =========================== */
+
+body {
+	font-family: 'Muli', sans-serif;
+	background-color: #FFF3EB;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.logo-img {
+	width: 60px;
+	margin-top: 50px;
+}
+
+h1 {
+	margin-top: 10px;
+	margin-bottom: 0;
+	color: #FF004B;
+	font-size: 42px;
+}
+h3, h4 {
+	color: #878787;
+	font-weight: 300;
+	margin: 0;
+}
+h3 {
+	color: #878787;
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+a {
+	color: inherit;
+	transition: all 250ms ease-in-out;
+}
+a:hover {
+	color: #FF004B;
+	text-decoration: none;
+	transition: all 250ms ease-in-out;
+}
+
+
+footer {
+	padding: 25px 25px;
+}
+
+.content-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-image: -webkit-linear-gradient(#FF004F 0%, #C2003C 100%);
+	background-image: -o-linear-gradient(#FF004F 0%, #C2003C 100%);
+	background-image: linear-gradient(#FF004F 0%, #C2003C 100%);
+	padding: 50px 0;
+	margin-top: 50px;
+}
+
+.content-wrap div {
+	margin: 0 25px;
+	text-align: center;
+}
+
+.iphone-img {
+	width: 200px;
+}
+
+p {
+	max-width: 250px;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 50px;
+	color: #ffffff;
+}
+
+.button {
+	padding: 16px;
+	background: #84FFD0;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+	border-radius: 100px;
+	font-size: 14px;
+	color: #474747;
+	transition: all 250ms ease-in-out;
+}
+
+.button:hover {
+	background-color: #FFF3EB;
+}
+
+@media (max-width: 549px) {
+	.content-wrap div:last-child {
+		margin-top: 50px;
+	}
+}
