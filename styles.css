@@ -56,12 +56,18 @@ footer {
 }
 
 .content-wrap {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-image: -webkit-linear-gradient(#FF004F 0%, #C2003C 100%);
-	background-image: -o-linear-gradient(#FF004F 0%, #C2003C 100%);
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 	background-image: linear-gradient(#FF004F 0%, #C2003C 100%);
 	padding: 50px 0;
 	margin-top: 50px;
@@ -87,18 +93,6 @@ footer {
 	top: 58px;
 	left: 14px;
 	border: 1px solid #1a1a1a;
-}
-
-.iphone-img:before {
-	content: " ";
-	position: absolute;
-	z-index: -1;
-	top: 5px;
-	left: 5px;
-	right: 5px;
-	bottom: 5px;
-	border: 10px solid #fafafa;
-
 }
 
 
