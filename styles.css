@@ -104,6 +104,11 @@ p {
 	color: #ffffff;
 }
 
+.download.disabled {
+	pointer-events: none;
+	opacity: 0.7;
+}
+
 .download img {
 	width: 200px;
 }
