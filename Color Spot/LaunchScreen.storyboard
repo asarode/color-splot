@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Fr7-qS-cyn">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="century-gothic.ttf">
+            <string>CenturyGothic</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="CqO-0d-HzI">
+            <objects>
+                <viewController id="Fr7-qS-cyn" customClass="ViewController" customModule="Color_Spot" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hvs-S4-2Ay"/>
+                        <viewControllerLayoutGuide type="bottom" id="PYT-AJ-e4U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i2h-dY-j5O">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="uNd-xA-I5x">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ACA-8E-w6y"/>
+                                    <constraint firstAttribute="width" constant="60" id="zTk-g5-3Ai"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ACA-8E-w6y"/>
+                                        <exclude reference="zTk-g5-3Ai"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ACA-8E-w6y"/>
+                                        <include reference="zTk-g5-3Ai"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by @rjun07a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HI6-4N-Giw">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="12"/>
+                                <color key="textColor" red="0.52935177089999996" green="0.52944630380000002" blue="0.52934587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="150" y="761" width="100" height="14"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.95337575669999997" blue="0.91953593489999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uNd-xA-I5x" firstAttribute="top" secondItem="hvs-S4-2Ay" secondAttribute="bottom" constant="50" id="WUz-V8-Gvy">
+                                <variation key="widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="PYT-AJ-e4U" firstAttribute="top" secondItem="HI6-4N-Giw" secondAttribute="bottom" constant="54" id="aud-3I-14F">
+                                <variation key="widthClass=compact" constant="25"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="uNd-xA-I5x" secondAttribute="centerX" constant="-5" id="oGQ-Ku-w4l">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="HI6-4N-Giw" secondAttribute="centerX" constant="-21.5" id="usQ-vP-dxZ">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="uNd-xA-I5x"/>
+                                <exclude reference="HI6-4N-Giw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="usQ-vP-dxZ"/>
+                                <exclude reference="aud-3I-14F"/>
+                                <exclude reference="WUz-V8-Gvy"/>
+                                <exclude reference="oGQ-Ku-w4l"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="uNd-xA-I5x"/>
+                                <include reference="HI6-4N-Giw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="usQ-vP-dxZ"/>
+                                <include reference="aud-3I-14F"/>
+                                <include reference="WUz-V8-Gvy"/>
+                                <include reference="oGQ-Ku-w4l"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="LPb-tp-XGN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sX6-fU-hQ3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166.5" y="300.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="61" height="61"/>
+    </resources>
+</document>
